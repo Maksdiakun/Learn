@@ -1,0 +1,30 @@
+.category_item{
+    font-size: 16px;
+    padding: 10px 45px;
+    border-radius: 36px;
+    margin-right: 6px;
+    border: 2px solid transparent;
+
+    &:nth-child(2n+2){
+        background-color: rgba($color:  #C6A070, $alpha: 0.5);   
+    }
+    &:nth-child(2n+3){
+        background-color: rgba($color:  #FF6638, $alpha: 0.4);  
+    }
+    &:nth-child(3n+3){
+        background-color: rgba($color:  #E7ECFF, $alpha: 1);    
+    }
+    
+    &:first-child{
+        background-color: rgba($color:  #8897A4, $alpha: 0.2);
+    }
+    &:hover{
+        border: 2px solid #00A6B0;
+    }
+}
+@media(max-width:575.9px){
+    .category_item{
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+}

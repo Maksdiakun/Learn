@@ -1,0 +1,154 @@
+
+@import './reset';
+@import './mixins&vars';
+
+@font-face {
+    font-family: "Inter', sans-serif";
+    src: local("Inter"),
+      url("../static/fonts/Inter/Inter-Regular.ttf") format("truetype");
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: "Inter', sans-serif";
+    src: local("Inter"),
+      url("../static/fonts/Inter/Inter-Medium.ttf") format("truetype");
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: "Inter', sans-serif";
+    src: local("Inter"),
+      url("../static/fonts/Inter/Inter-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+  }
+  @font-face {
+    font-family: "Inter', sans-serif";
+    src: local("Inter"),
+      url("../static/fonts/Inter/Inter-Bold.ttf") format("truetype");
+    font-weight: bold;
+  }
+textarea{
+    font-family: "Inter', sans-serif" !important;  
+}
+body{
+    font-family: "Inter', sans-serif";
+    color: $black;
+    line-height: 150%;
+    font-size: 14px;
+    font-weight: normal;
+}
+h1{
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+}
+h2{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+}
+h3{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+}
+h4{
+    font-size: 16px;
+    line-height: 150%;
+}
+.f_bold{
+    font-weight: bold;
+}
+.align_center{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+.just_btwn{
+    display: flex;
+    justify-content: space-between;
+}
+.just_center{
+    display: flex;
+    justify-content: center;
+}
+.text_center{
+    text-align: center;
+}
+.margin_5{
+    margin: 0 5px;
+}
+.width_125{
+    width: calc(100% + 25px);
+}
+
+main{
+    width: calc(100vw - 76px);
+    margin-left: -10px;
+    background-color: $water;
+    border-top-left-radius:10px;
+    border-bottom-left-radius: 10px;
+    position: relative;
+    z-index: 4;
+    height: 100vh;
+    overflow-y:scroll;
+    padding: 0px 25px;
+    padding-top: 0;
+}
+.app{
+    >div{
+        display: flex;
+        align-items: top;
+    }
+}
+.grey_line{
+    height: 1px;
+    background-color: #E0E0E0;
+    width: 100%;
+    margin: 0 auto;
+}
+.message_modal_content{
+    padding: 30px;
+    background-color: rgba($color:#42BDC5 , $alpha: 0.2);
+}
+.page_title{
+    margin: 25px 0;
+}
+.video_row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -6px;
+    justify-content: center;
+
+}
+.col_4{
+    padding:  6px;
+    width: 33.333%;
+}
+.form_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 8px;
+    background-color: $green;
+    color: $white;
+    height: 50px;
+    padding: 0 30px ;
+}
+.triangle{
+    width: 0; 
+  height: 0; 
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #193234;
+  transition: transform 0.2s linear;
+}
+.triangle_up{
+    transform: rotate(-180deg);   
+}
+.app{
+    overflow-x: hidden;
+}
+@import './media'

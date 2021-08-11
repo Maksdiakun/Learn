@@ -1,0 +1,45 @@
+@import '../../styles/mixins&vars';
+.translate_modal{
+    position: absolute;
+    z-index: 10;
+    background-color: $white;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 450px;
+    padding: 15px;
+    padding-bottom: 0;
+    bottom: 100px;
+    left: 50%;
+    transform: translate(-50%,0);    
+    &_title{
+        margin: 15px 0;
+        font-size: 12px;
+        opacity: 0.5;
+    }
+    &_btns{
+        display: flex;
+        margin: 0 -15px;
+        margin-top: 15px;
+        button{
+            width: 50%;
+            border-radius: 8px;
+            height: 50px;
+            @include transition;
+            &:first-child{
+                border-radius:8px 0px 0px 8px;
+                border: 1px solid $green;
+                &:hover{
+                    border: 1px solid #66CAD0;
+                }
+            }
+            &:last-child{
+                background-color: $green;
+                color: $white;
+                border-radius:0 8px 8px 0;
+                &:hover{
+                    background-color: #66CAD0;
+                }
+            }
+        }
+    }
+}

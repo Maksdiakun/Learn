@@ -1,0 +1,125 @@
+@import '../../styles/mixins&vars';
+
+.study_sheet_page{
+    .grey_line{
+        margin: 25px 0;
+    }
+}
+.study_sheet_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sheets_search{
+    display: flex;
+    align-items: center;
+    width: 41%;
+    min-width: 450px;
+ &_field{
+    background: $white;
+    box-shadow: 0px 4px 30px rgba(31, 27, 27, 0.05);
+    border-radius: 8px;
+    height: 50px;
+    align-items: center;
+    display: flex;
+    padding:  0 20px;
+    width: 100%;
+    input{
+        height: 100%;
+        width: 100%;
+    }
+    >svg{
+        flex-shrink: 0;
+        margin-right: 10px;
+    }
+}
+    .form_btn{
+        margin-left: 20px;
+    }
+}
+.study_sheet_header{
+    .select_label{
+        >div{
+            padding: 15px 20px;
+            background-color: $white;
+            box-shadow: 0px 4px 30px rgba(31, 27, 27, 0.05);
+            border-radius: 8px;
+            p{
+                margin-left: 0;
+                margin-right: 50px;
+            }
+        }
+    }
+    .select_options{
+        li{
+            background-image: url('../../static/images/greenArrows.svg');
+            background-position: right 10px center;
+            background-size: 17px;
+            background-repeat: no-repeat;
+
+        }
+        li.active_option{
+            background-image: url('../../static/images/arrows.svg') ;
+        }
+        li:hover{
+                        background-image: url('../../static/images/arrows.svg') ;
+        }
+        li{
+            padding-right: 30px;
+        }
+    }
+}
+.study_sheet_section{
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 20px 25px;
+    padding-top: 5px;
+}
+@media(max-width:991.9px){
+    .sheets_search{
+        min-width: 400px;
+    }
+}
+@media(max-width:767.9px){
+    .study_sheet_header{
+        position: relative;
+        .select_label{
+            >div{
+                display: none;
+            }
+        }
+        .form_btn{
+            display: none;
+        }
+        .select_container{
+            position: absolute;
+            top: -58px;
+            right: 0;
+        }
+    }
+  
+    .sheets_search{
+        width: 100%;
+        min-width: unset;
+        svg{
+            order: 1;
+            margin-right: 0;
+            margin-left: 10px;
+            path{
+                stroke: $green;
+            }
+        }
+    }
+}
+@media(max-width:575.9px){
+    .study_sheet_header{
+        .select_container{
+            top: -47px;
+        }
+    }
+    .sheets_search{
+        svg{
+            width: 14px;
+        }
+    }
+}

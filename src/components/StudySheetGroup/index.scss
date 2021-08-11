@@ -1,0 +1,89 @@
+.study_sheet_group_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    position: relative;
+    >div{
+        display: flex;
+        cursor: pointer;
+        flex-grow: 1;
+        h2{
+            max-width: calc(100%  - 40px);
+        }
+        .triangle{
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+    }
+    &_time{
+        opacity: 0.75;
+        span:first-child{
+            font-weight: 600;
+            margin-right: 3px;
+        }
+        margin: 0 20px;
+    }
+}
+
+
+
+.study_sheet_group >ul{
+    overflow: hidden;
+    transition: all 0.2s ;
+}
+.study_sheet_group{
+    .list-enter{
+        max-height: 0;
+    }
+  .list-enter-active {
+    max-height: auto;
+}
+  .list-enter-done{
+    max-height: auto;
+
+}
+.list-exit{
+    max-height: auto;
+  }
+  .list-exit-active {
+    max-height: 0;
+  }
+}
+
+@media(max-width:1199.9px){
+    .study_sheet_group_title{
+        flex-direction: column;
+        padding-right: 60px;
+        div{
+            flex-wrap: wrap;
+        }
+        h2{
+            width: 100%;
+            margin-bottom: 10px;
+
+        }
+        
+        &_time{
+            margin: 0;
+            margin-right: 15px;
+        }
+    }
+    .study_sheet_group{
+        .delete_btn{
+            position: absolute;
+            top: 0%;
+            right: 0;
+            width: fit-content;
+        }
+    }
+}
+@media(max-width:575.9px){
+    .study_sheet_group_title div{
+        margin-right: 6px;
+    }
+    .study_sheet_group_title{
+        padding-right: 30px;
+    }
+}

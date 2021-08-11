@@ -1,0 +1,66 @@
+@import '../../../styles/mixins&vars';
+
+.header_mobile{
+    background-color: $white;
+    padding: 13px 16px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+    &_wrap{
+        position: relative;
+        width: 100vw;
+        margin:  0 -15px;
+        z-index: 100;
+    }
+    button svg{
+        path{
+            stroke: $green;
+        }
+    }
+}
+.mobile_search{
+    position: absolute;
+    width: 100%;
+    background-color: $green;
+    height: 60px;
+    padding: 10px 16px;
+    .search_filed{
+        height: 100%;
+        width: 100%;
+    }
+}
+.alert-enter {
+    transform: translateY(-200px);
+  }
+  .alert-enter-active {
+    transform: translateY(0);
+    transition: transform 0.5s;
+  }
+  .alert-exit {
+      transform: translateY(0);
+      transition: transform 0.5s;
+  }
+  .alert-exit-active {
+    transform: translateY(-200px);
+    transition: transform 0.7s;
+  }
+.menu_mob_btn{
+    @include spanBtn;
+    span{
+        background-color: $green;
+    }
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.header_fixed{
+    position: fixed;
+    top: 0;
+    .header_mobile{
+        justify-content: center;
+        button{
+            display: none;
+        }
+    }
+}

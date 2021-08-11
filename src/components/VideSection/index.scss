@@ -1,0 +1,58 @@
+.video_section{
+width: 100%;
+margin-right: 25px;
+position: relative;
+overflow: hidden;
+border-radius: 10px;
+    .tooltip_wrap{
+        right: 10px;
+        top: 10px;
+    }
+    &:hover{
+        .captions{
+            bottom: 70px;
+        }
+    }
+    .back_btn{
+        position: absolute;
+        z-index: 30;
+        left: 20px;
+        top: 60px;
+    }
+}
+
+.video_wrap{
+    width: 100%;
+}
+.video_section>.video_block{
+  width: 100% !important; // Reset width
+  height: 100% !important; // Reset height
+}
+.video_section  {
+    height:  calc(100% - 300px);
+  padding-top: 40.25%; // Percentage ratio for 16:9
+  position: relative; // Set to relative
+}
+.video_section>.video_block{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+}
+@media(max-width:1199px){
+    .video_section{
+        padding-top: 53%;
+    }
+    .subtitle_list{
+        height: auto;
+        overflow: unset;
+    }
+    .view_page{
+        height: auto;
+    }
+}
+@media(max-width:575.9px){
+    .subtitle_item{
+        font-size: 12px;
+        line-height: 15px;
+    }
+}

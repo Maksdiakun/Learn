@@ -1,0 +1,14 @@
+.category_list{
+    overflow-y: scroll;
+    flex-wrap: nowrap;
+    display: flex;
+    margin-bottom: 35px;
+    &_wrap{
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+div.video_row{
+    justify-content: left;
+}

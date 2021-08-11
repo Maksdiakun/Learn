@@ -1,0 +1,36 @@
+@import '../../../styles/mixins&vars';
+.tooltip{
+    &_wrap{
+        display: flex;
+        align-items: center;
+        position: absolute;
+    }
+    &_content{
+        background: rgba(25, 50, 52, 0.75);
+        border-radius: 5px;
+        padding: 7px 10px;
+        font-size: 12px;
+        font-weight: 500;
+        max-width: 250px;
+        color: #fff;
+        position: relative;
+        margin-right: 16px;
+        &:after{
+            @include after;
+            @include center;
+            width: 0; 
+            height: 0; 
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-left: 10px solid  rgba(25, 50, 52, 0.75);;
+            border-radius: 2px;
+            right: -10px;
+        }
+    }
+    &_btn{
+        width: 30px;
+        height: 30px;
+        background: rgba(25, 50, 52, 0.75);
+                border-radius: 50%;
+    }
+}

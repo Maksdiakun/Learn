@@ -1,0 +1,25 @@
+.header_main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header{
+    padding: 30px 0;
+    .select_container{
+        &:last-child{
+            margin-left: 40px;
+        }
+    }
+}
+.header_name{
+    display: flex;
+    align-items: center;
+    span:not(:last-child){
+        margin-right: 4px;
+    }
+}
+@media(max-width:767.9px){
+    header {
+        padding: 0;
+    }
+}

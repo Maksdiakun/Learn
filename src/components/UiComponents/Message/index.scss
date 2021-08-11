@@ -1,0 +1,28 @@
+.message_res{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    position: absolute;
+    max-width: 255px;
+    background: rgba(25, 50, 52, 0.75);
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    font-size: 11px;
+    z-index: 2222;
+}
+.mess-enter {
+    transform: translateX(200px);
+  }
+  .mess-enter-active {
+    transform: translateX(0);
+    transition: transform 0.5s;
+  }
+  .mess-exit {
+      transform: translateX(0);
+      transition: transform 0.5s;
+  }
+  .mess-exit-active {
+    transform: translateX(200px);
+    transition: transform 0.7s;
+  }

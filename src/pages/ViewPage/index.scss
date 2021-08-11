@@ -1,0 +1,19 @@
+.view_page{
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: calc(100% - 110px);
+}
+@media(max-width:1199px){
+    .view_page.width_125{
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 80px;
+    }
+    .video_section{
+        padding-top: 53%;
+    }
+    .view_page .subtitle_list{
+        max-height: unset;
+    }
+}

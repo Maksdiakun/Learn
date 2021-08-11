@@ -1,0 +1,31 @@
+@import 'src/styles/mixins&vars';
+
+.side_menu{
+    height: 100vh;
+    background-color: $green;
+    padding: 35px 0;
+    padding-right: 10px;
+    a{
+        color: $white;
+    }
+    li {
+        a{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 10px 15px ;
+            width: 76px;
+            @include transition;
+            &:hover,&.active{
+                background:rgba(255, 255, 255,0.4)
+            }
+        }
+    }
+    &_logo{
+        h3{
+            text-align: center;
+        }
+        margin: 0 auto;
+        margin-bottom: 60px;
+    }
+}

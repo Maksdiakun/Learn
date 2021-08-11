@@ -1,0 +1,19 @@
+@import'../../../styles/mixins&vars';
+.rounded_btn{
+    display: flex;
+    width: fit-content;
+    height: 45px;
+    border-radius: 36px;
+    background-color: $green;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    @include transition;
+    color: $white;
+    &:hover{
+        background-color: $light_green;
+    }
+    span{
+        color:$white;
+    }
+}

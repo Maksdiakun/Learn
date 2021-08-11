@@ -1,0 +1,71 @@
+.study_item{
+    display: flex;
+    align-items: flex-start;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba($color: #193234, $alpha: 0.1);
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    &_comment{
+        display: flex;
+        align-items: flex-start;
+        img{
+            margin-right: 15px;
+        }
+    }
+    >*:not(:last-child){
+        margin-right: 20px;
+    }
+    &_time{
+        width: 35px;
+    }
+    &_text{
+        width: 23%;
+    }
+    &_translate{
+        width: 23%;
+    }
+    &_comment{
+        width: 230px;
+        textarea{
+            resize: none;
+            min-height: 32px;
+            max-height: 300px;
+            width: 100%;
+        }
+    }
+}
+@media(max-width:1199.9px){
+       .study_item{
+           justify-content: flex-start;
+           >*{
+               width: 100%;
+               margin-bottom: 16px;
+               margin-left: 55px;
+           }
+           .delete_btn{
+            top: 12px;
+        }
+        .study_item_text{
+            margin-left: 20px;
+        }
+       }
+       .study_item_time{
+           width: 35px;
+           margin-left: 0;
+       }
+       .study_item_text{
+           width: calc(100% - 120px);
+       }
+       .study_item_translate{
+        margin-left:55px;
+       }
+       .study_item > *:not(:last-child){
+           margin-right: 0;
+       }
+}
+.study_item_comment{
+    form{
+        width: 100%;
+    }
+}

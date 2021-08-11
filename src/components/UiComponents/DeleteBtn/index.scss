@@ -1,0 +1,14 @@
+.delete_btn{
+    padding: 10px 13px;
+    background-color: #F5FBFC;
+    border-radius: 8px;
+}
+@media(max-width:575.9px){
+    .delete_btn{
+        padding: 6px 7px;
+        svg{
+            width: 10px;
+            height: auto;
+        }
+    }
+}
