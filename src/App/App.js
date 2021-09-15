@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { CSSTransition } from "react-transition-group";
-import API from "../API";
 import AuthRoutes from "../AuthRoutes";
 import Message from "../components/UiComponents/Message";
 import PrivateRoutes from "../PrivateRoutes";

@@ -35,6 +35,9 @@ const Captions = ({ videoTime = 0, videoPlay }) => {
 
   return (
     <p className="captions">
+      <p className="cap_label">
+        Original
+      </p>
       <span onSelect={selectText} onMouseDown={funcStop} onMouseUp={selectText}>
         {state?.text}
       </span>

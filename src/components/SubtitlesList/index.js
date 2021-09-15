@@ -8,6 +8,9 @@ const SubtitlesList = ({ videoTime = 0 }) => {
   const { subtitlesTranslated } = useSelector((state) => state.video.subtitles);
   return (
     <div className="subtitle_list">
+      <p className="translated_lable">
+        Translated
+      </p>
       <ul>
         {subtitlesTranslated &&
           fiterSubtitles(subtitlesTranslated, videoTime).map((el, index) => (

@@ -26,6 +26,15 @@
         color: #fff;
     }
 }
+.cap_label{
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    color: #fff;
+    z-index: 222222;
+    font-weight: 600;
+    font-size: 10px;
+}
 @media(max-width:576px){
     .captions{
         font-size: 11px;

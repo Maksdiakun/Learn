@@ -7,7 +7,7 @@ const Menu = memo(() => {
   return (
     <div className="side_menu">
       <Link to="/" className="side_menu_logo">
-        <h3>Logo</h3>
+        <h3>Idiom</h3>
       </Link>
       <MenuList />
     </div>

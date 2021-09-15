@@ -80,6 +80,7 @@ const LangSelect = () => {
             onClick={handleListDisplay}
           >
             <div>
+              <p className="your_label">Your Language</p>
               <p>{labelText}</p>
               <img src={arrow} alt="" className="arrow_img" />
             </div>

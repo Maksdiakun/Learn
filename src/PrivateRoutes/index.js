@@ -22,7 +22,7 @@ const PrivateRoutes = () => {
 
   return (
     <>
-      {<Menu />}
+      {!mobile && <Menu />}
       <main ref={mainRef}>
         <Header mobile={mobile} />
         <Switch>

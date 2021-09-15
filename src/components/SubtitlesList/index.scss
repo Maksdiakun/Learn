@@ -5,4 +5,12 @@
     margin-top: 25px;
     max-height: 300px;
     overflow: scroll;
+    position: relative;
+}
+.translated_lable{
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    font-weight: bold;
+    font-size: 10px;
 }
